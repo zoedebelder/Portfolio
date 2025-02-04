@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Bodoni Moda', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.9375rem;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    padding: 1rem;
+    padding-right: 1.875rem;
+}
+
+header h1{
+    font-size: 3.125rem;
+    text-decoration: underline;
+    text-underline-offset: 0.9375rem;
+    padding: 1.875rem;
+}
+
+header h2{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+header h3{
+    background-color: #cbcbad;
+    display: inline-block;
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    margin-left: 3.75rem;
+}
+
+header p{
+    display: flex;
+    text-align: center;
+    padding-top: 0.3125rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+
+/* scroll items */
+main {
+    font-size: 1.9375rem;
+    padding-left: 0.625rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* project items */
+
+.projects h1{
+    font-size: 3.4375rem;
+    text-decoration: underline;
+    text-underline-offset: 0.9375rem;
+    margin-right: 1rem;
+    text-decoration-color: #cbcbad;
+}
+
+.projects {
+    padding: 1.125rem;
+    margin-left: 2rem;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1.25rem;
+    
+}
+
+.projects i {
+    color: #837459;
+}
+
+.proj1, .proj2, .proj3 {
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Bodoni Moda', serif;
+    color: white;
+    background-color: #837459;
+    font-size: 1.875rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.625rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    margin-left: 8.125rem;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+
+button:hover{
+    text-decoration: underline;
+}
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+    gap: 0.4375rem;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+
+/* Responsive */ 
+
+@media screen and (min-width: 768px) {
+    h3{ font-size: 1.65rem;
+        margin-left: 150px;
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+    }
+
+    main{
+        font-size: 3.875rem;
+    }
+
+    footer button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    header h1{
+        font-size: 6.25rem;
+        padding: 1.125rem;
+    }
+
+    header h2{
+        font-size: 4.6875rem;
+        padding-right: 1.25rem;
+    }
+    
+    header h3{
+        margin-left: 26.5625rem;
+    }
+    
+    header p{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    
+    button {
+        margin-left: 32.5rem;
+    }
+}
